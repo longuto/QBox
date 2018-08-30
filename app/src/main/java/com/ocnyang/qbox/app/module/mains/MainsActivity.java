@@ -116,10 +116,10 @@ public class MainsActivity extends BaseCustomActivity {
 
         String startPage = WECHAT_FRAGMENT;
         String s = (String) SPUtils.get(this, Const.OPENNEWS, "nomagic");
-        if (s.equals("magicopen")){
+//        if (s.equals("magicopen")){
             sRecommendMains.setVisibility(View.VISIBLE);
             startPage = NEWS_FRAGMENT;
-        }
+//        }
         if (savedInstanceState != null) {
             initByRestart(savedInstanceState);
         } else {
